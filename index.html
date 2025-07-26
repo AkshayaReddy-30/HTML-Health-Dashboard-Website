@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Dashboard</title>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background: #0077b6;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #0077b6;
+    }
+
+    .progress-bar {
+      background: #eee;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    .progress {
+      height: 20px;
+      background: #00b4d8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #caf0f8;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🏥 Health Dashboard</h1>
+    <p>Track your daily health goals</p>
+  </header>
+
+<section class="dashboard">
+    <div class="card">
+      <h2>💧 Water Intake</h2>
+      <p>You've had 5 of 8 glasses today</p>
+      <div class="progress-bar">
+        <div class="progress" style="width: 62%;"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🚶 Step Counter</h2>
+      <p>Steps walked today: <strong>6,500</strong> / 10,000</p>
+      <div class="progress-bar">
+        <div class="progress" style="width: 65%;"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>⚖️ BMI</h2>
+      <p>BMI Formula: weight(kg) / height(m)<sup>2</sup></p>
+      <p>Your BMI: <strong>22.4 (Normal)</strong></p>
+    </div>
+
+    <div class="card">
+      <h2>🍎 Nutrition Tips</h2>
+      <ul>
+        <li>Start your day with fruits</li>
+        <li>Drink water before meals</li>
+        <li>Avoid sugar late night</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>Created by Akshaya Reddy | Health is Wealth 💪</p>
+  </footer>
+
+</body>
+</html>
